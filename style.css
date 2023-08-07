@@ -1,0 +1,258 @@
+body {
+  width: 100%;
+
+	background: #152d6b;
+}
+h1{
+  margin: 6px 0 0 10px;
+  color: #200d8c;
+  font-size: 20px;
+}
+.muestraPuntaje{
+  width: 30px;
+  height: 30px;
+
+  font-size: 24px;
+  color: #cdf009;
+  margin: 8px 0 0 20px;
+  padding: 8px 0 0 10px;
+  background: #bd2c13;
+}
+.cuadrilla{
+  background: #ccc;
+ width: 200px;
+ height: 200px;
+ border: 6px solid black;
+ border-radius: 8px;
+ margin: 3em auto;
+ display: flex;
+ flex-wrap: wrap;
+}
+.cuadrilla div{
+	width: 20px;
+	height: 20px;
+	border: 10 black solid;
+  box-sizing: border-box;
+	
+}
+.boton{
+  width: 40%;
+  margin: 1em 0 0 31em;
+
+}
+.superior{
+  width: 16%;
+  height: 30px;
+  box-shadow: 0px 0px 0px 0px #9fb4f2;
+  background:linear-gradient(to bottom, #7892c2 5%, #476e9e 100%);
+  background-color:#7892c2;
+  border-radius:28px;
+  border:3px solid #4e6096;
+  display:inline-block;
+  cursor:pointer;
+  color:#ffffff;
+  font-family:Arial;
+  font-size:17px;
+  padding:1px 3px;
+  text-decoration:none;
+  text-shadow:0px 1px 0px #283966;
+
+}
+.superior:hover {
+  background:linear-gradient(to bottom, #476e9e 5%, #7892c2 100%);
+  background-color:#476e9e;
+}
+.superior:active {
+  position:relative;
+  top:1px;
+}
+.fondo{
+  width: 16%;
+  height: 30px;
+  box-shadow: 0px 0px 0px 0px #9fb4f2;
+  background:linear-gradient(to bottom, #7892c2 5%, #1d4c85 100%);
+  background-color:#7892c2;
+  border-radius:28px;
+  border:3px solid #4e6096;
+  display:inline-block;
+  cursor:pointer;
+  color:#ffffff;
+  font-family:Arial;
+  font-size:17px;
+  padding:1px 1px;
+  text-decoration:none;
+  text-shadow:0px 1px 0px #283966;
+}
+.fondo:hover {
+  background:linear-gradient(to bottom, #1d4c85 5%, #7892c2 100%);
+  background-color:#1d4c85;
+}
+.fondo:active {
+  position:relative;
+  top:1px;
+}
+.derecha{
+  width: 18%;
+  height: 30px;
+  box-shadow: 0px 0px 0px 0px #9fb4f2;
+  background:linear-gradient(to bottom, #7892c2 5%, #1d4c85 100%);
+  background-color:#7892c2;
+  border-radius:28px;
+  border:3px solid #4e6096;
+  display:inline-block;
+  cursor:pointer;
+  color:#ffffff;
+  font-family:Arial;
+  font-size:17px;
+  padding:1px 1px;
+  text-decoration:none;
+  text-shadow:0px 1px 0px #283966;
+}
+.derecha:hover{
+  background:linear-gradient(to bottom, #1d4c85 5%, #7892c2 100%);
+  background-color:#1d4c85;
+}
+.derecha:active {
+  position:relative;
+  top:1px;
+}
+.izquierda{
+  width: 20%;
+  height: 30px;
+  box-shadow: 0px 0px 0px 0px #9fb4f2;
+  background:linear-gradient(to bottom, #7892c2 5%, #1d4c85 100%);
+  background-color:#7892c2;
+  border-radius:28px;
+  border:3px solid #4e6096;
+  display:inline-block;
+  cursor:pointer;
+  color:#ffffff;
+  font-family:Arial;
+  font-size:17px;
+  padding:1px 1px;
+  text-decoration:none;
+  text-shadow:0px 1px 0px #283966;
+}
+.izquierda:hover{
+  background:linear-gradient(to bottom, #1d4c85 5%, #7892c2 100%);
+  background-color:#1d4c85;
+}
+.izquierda:active {
+  position:relative;
+  top:1px;
+}
+.serpiente{
+  border-radius: 5px ;
+box-shadow: 1px 1px  3px 2px #000000;
+	background: yellowgreen;
+    }
+.manzana{
+  background: red;
+  width: 14px;
+  height: 14px;
+  border-radius: 18px;
+
+}
+.popup{
+	background: #010d1a;
+	width: 200px;
+	height: 200px;
+	position: fixed;
+  top: 100px;
+	left: 100px;
+	display: flex;
+  margin: 2em 0 0 12em;
+	justify-content: center;
+	align-items: center;
+  border-radius: 8px;
+}
+.juegaDeNuevo{
+  width: 80%;
+  height: 5em;
+  font-size: 24px;
+  font-weight: bold;
+  color: #d60707;
+  background: blue;
+  border-radius: 30px;
+  transition: 0.5s all ;
+  cursor: pointer;
+
+}
+.juegaDeNuevo:hover{
+  margin: 0 0 0 0;
+  color: lightblue;
+  border-color: lightblue;
+  background: darkblue;
+ box-shadow: 10px 8px  30px 8px #000000;;
+  transform: scale(1.1);
+}
+.inciarjuego{
+
+  display: block;
+  width: 40%;
+  height: 50px;
+  margin: 30px 30% 0 30%;
+}
+@media screen and (max-width:375px){
+body{
+ width: auto;
+ }
+    
+
+
+.muestraPuntaje{
+  width: 10%;
+ }
+
+.boton{
+  width: 100%;
+margin: 2em 1em 0 1em;
+ }
+
+
+.fondo{
+  width: 18%;
+ }
+.derecha{
+  width: 24%;
+ }
+.izquierda{
+  width: 30%;
+  margin: 0 0 0 0;
+ }
+.popup{
+  margin: 2em 0 0 0;
+ }
+}
+@media screen and (max-width:414px){
+    
+
+.muestraPuntaje{
+  width: 10%;
+ }
+
+.boton{
+  width: 100%;
+  margin: 2em 1em 0 1em;
+ }
+.superior{
+  width: 19%;
+  height: 40px;
+ }
+.fondo{
+  width: 18%;
+  height: 40px;
+ }
+.derecha{
+  width: 24%;
+  height: 40px;
+ }
+.izquierda{
+  width: 30%;
+  height: 40px;
+  margin: 0 0 0 0;
+ }
+.popup{
+  margin:2em auto;
+ }
+}
