@@ -40,7 +40,7 @@ h1 {
 
 }
 
-.boton {
+.botones {
   width: 40%;
   margin: 1em 0 0 31em;
 
@@ -218,78 +218,6 @@ h1 {
   margin: 30px 30% 0 30%;
 }
 
-@media screen and (max-width:375px) {
-  body {
-    width: auto;
-  }
-
-
-
-  .muestraPuntaje {
-    width: 10%;
-  }
-
-  .boton {
-    width: 100%;
-    margin: 2em 1em 0 1em;
-  }
-
-
-  .fondo {
-    width: 18%;
-  }
-
-  .derecha {
-    width: 24%;
-  }
-
-  .izquierda {
-    width: 30%;
-    margin: 0 0 0 0;
-  }
-
-  .popup {
-    margin: 2em 0 0 0;
-  }
-}
-
-@media screen and (max-width:414px) {
-
-
-  .muestraPuntaje {
-    width: 10%;
-  }
-
-  .boton {
-    width: 100%;
-    margin: 2em 1em 0 1em;
-  }
-
-  .superior {
-    width: 19%;
-    height: 40px;
-  }
-
-  .fondo {
-    width: 18%;
-    height: 40px;
-  }
-
-  .derecha {
-    width: 24%;
-    height: 40px;
-  }
-
-  .izquierda {
-    width: 30%;
-    height: 40px;
-    margin: 0 0 0 0;
-  }
-
-  .popup {
-    margin: 2em auto;
-  }
-}
 
 @media screen and (min-width: 768px ){
   .banner__imagen{
