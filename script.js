@@ -23,8 +23,7 @@ document.addEventListener("DOMContentLoaded", function () {
 	crearTablero()
 
 	 
-		cuadrilla.style.display = "none"
-		muestraPuntaje.style.display = "none"
+		
 		btn.style.display = "none"
 	
 		
