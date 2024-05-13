@@ -23,9 +23,9 @@ document.addEventListener("DOMContentLoaded", function () {
 	crearTablero()
 
 	 
-		
+		/*
 		btn.style.display = "none"
-	
+	*/
 		
 	juegaDeNuevo.addEventListener("click", repeticion)
 	
@@ -65,13 +65,14 @@ function moverResultado() {
 	if (compruebaPorGolpes(cuadrados)) {
 		alert("ala verga")
 		
+		popup.style.display = "flex"
 		cuadrilla.style.display = "none"
 		muestraPuntaje.style.display = "none"
 		arriba.style.display = "none"
 		fondo.style.display = "none"
 		derecha.style.display = "none"
 		izquierda.style.display = "none"
-		popup.style.display = "flex"
+		
 		return clearInterval(interval)
 	} else {
 		mueveSerpiente(cuadrados)
@@ -146,12 +147,12 @@ function repeticion() {
 	crearTablero()
 	comienzaJuego()
    
-	    cuadrilla.style.display = ""
-		muestraPuntaje.style.display = ""
-		arriba.style.display = ""
-		fondo.style.display = ""
-		derecha.style.display = ""
-		izquierda.style.display = ""
+	    cuadrilla.style.display = "none"
+		muestraPuntaje.style.display = "none"
+		arriba.style.display = "none"
+		fondo.style.display = "none"
+		derecha.style.display = "none"
+		izquierda.style.display = "none"
 		popup.style.display = "none";
 
 }
