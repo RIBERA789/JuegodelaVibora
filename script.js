@@ -21,7 +21,14 @@ document.addEventListener("DOMContentLoaded", function () {
 	document.addEventListener("keyup", control)
 	crearTablero()
 
-
+    
+		cuadrilla.style.display = "none"
+		muestraPuntaje.style.display = "none"
+		arriba.style.display = "none"
+		fondo.style.display = "none"
+		derecha.style.display = "none"
+		izquierda.style.display = "none"
+		popup.style.display = "flex"
 	juegaDeNuevo.addEventListener("click", repeticion)
 	
 })
