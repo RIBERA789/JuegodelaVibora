@@ -1,11 +1,12 @@
+let btnInicio = document.querySelector(".inciarjuego")
 let cuadrilla = document.querySelector(".cuadrilla")
 let popup = document.querySelector(".popup");
 let juegaDeNuevo = document.querySelector(".juegaDeNuevo");
 let muestraPuntaje = document.querySelector(".muestraPuntaje")
-let izquierda = document.querySelector(".izquierda")
-let fondo = document.querySelector(".fondo")
+let arriba = document.querySelector(".arriba")
+let fondo = document.querySelector(".abajo")
 let derecha = document.querySelector(".derecha")
-let arriba = document.querySelector(".superior")
+let izquierda = document.querySelector(".izquierda")
 let ancho = 10;
 let indiceActual = 0
 let indiceManzana = 0
@@ -22,6 +23,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 	juegaDeNuevo.addEventListener("click", repeticion)
+	
 })
 
 function crearTablero() {
@@ -38,6 +40,7 @@ function comienzaJuego() {
 
 	let cuadrados = document.querySelectorAll(".cuadrilla div")
 	manzanaAlAzar(cuadrados)
+	btnInicio.style.display = "none";
 
 
 
@@ -55,7 +58,14 @@ function moverResultado() {
 
 	let cuadrados = document.querySelectorAll(".cuadrilla div")
 	if (compruebaPorGolpes(cuadrados)) {
-		alert("le pegastes a algo")
+		alert("ala verga")
+		
+		cuadrilla.style.display = "none"
+		muestraPuntaje.style.display = "none"
+		arriba.style.display = "none"
+		fondo.style.display = "none"
+		derecha.style.display = "none"
+		izquierda.style.display = "none"
 		popup.style.display = "flex"
 		return clearInterval(interval)
 	} else {
@@ -130,6 +140,13 @@ function repeticion() {
 	cuadrilla.innerHTML = " "
 	crearTablero()
 	comienzaJuego()
-	popup.style.display = "none";
+   
+	    cuadrilla.style.display = ""
+		muestraPuntaje.style.display = ""
+		arriba.style.display = ""
+		fondo.style.display = ""
+		derecha.style.display = ""
+		izquierda.style.display = ""
+		popup.style.display = "none";
 
 }
